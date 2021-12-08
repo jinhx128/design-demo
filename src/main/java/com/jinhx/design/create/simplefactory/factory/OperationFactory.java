@@ -5,7 +5,7 @@ import com.jinhx.design.create.simplefactory.operation.*;
 public class OperationFactory {
 
     public static Operation createOperation(String operation) {
-        Operation oper = null;
+        Operation oper;
 
         switch (operation) {
             case "add":

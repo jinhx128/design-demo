@@ -1,4 +1,4 @@
-package com.jinhx.design.create.facade;
+package com.jinhx.design.create.builder;
 
 public abstract class Builder {
 
