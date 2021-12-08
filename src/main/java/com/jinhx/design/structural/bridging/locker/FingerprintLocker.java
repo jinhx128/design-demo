@@ -1,6 +1,6 @@
 package com.jinhx.design.structural.bridging.locker;
 
-public class FingerprintLocker implements Locker {
+public class FingerprintLocker implements ILocker {
 
     @Override
     public void unlock() {

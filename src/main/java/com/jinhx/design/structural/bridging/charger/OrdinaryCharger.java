@@ -1,6 +1,6 @@
 package com.jinhx.design.structural.bridging.charger;
 
-public class OrdinaryCharger implements Charger {
+public class OrdinaryCharger implements ICharger {
 
     @Override
     public void charge() {

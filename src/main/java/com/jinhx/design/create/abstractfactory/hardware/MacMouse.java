@@ -1,6 +1,6 @@
 package com.jinhx.design.create.abstractfactory.hardware;
 
-public class MacIMouse implements IMouse {
+public class MacMouse implements IMouse {
 
     @Override
     public void click() {

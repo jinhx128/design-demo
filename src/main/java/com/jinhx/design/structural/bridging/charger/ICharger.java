@@ -1,6 +1,6 @@
 package com.jinhx.design.structural.bridging.charger;
 
-public interface Charger {
+public interface ICharger {
 
     void charge();
 

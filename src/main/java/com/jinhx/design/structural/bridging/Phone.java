@@ -1,36 +1,36 @@
 package com.jinhx.design.structural.bridging;
 
-import com.jinhx.design.structural.bridging.charger.Charger;
-import com.jinhx.design.structural.bridging.locker.Locker;
+import com.jinhx.design.structural.bridging.charger.ICharger;
+import com.jinhx.design.structural.bridging.locker.ILocker;
 
 public class Phone {
 
-    private Charger charger;
+    private ICharger iCharger;
 
-    private Locker locker;
+    private ILocker iLocker;
 
     public void charge() {
-        if (charger == null) {
+        if (iCharger == null) {
             return;
         }
 
-        charger.charge();
+        iCharger.charge();
     }
 
     public void unlock() {
-        if (locker == null) {
+        if (iLocker == null) {
             return;
         }
 
-        locker.unlock();
+        iLocker.unlock();
     }
 
-    public void setCharger(Charger charger) {
-        this.charger = charger;
+    public void setCharger(ICharger iCharger) {
+        this.iCharger = iCharger;
     }
 
-    public void setLocker(Locker locker) {
-        this.locker = locker;
+    public void setLocker(ILocker iLocker) {
+        this.iLocker = iLocker;
     }
 
 }

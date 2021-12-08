@@ -1,6 +1,6 @@
 package com.jinhx.design.structural.bridging.locker;
 
-public class FaceLocker implements Locker {
+public class FaceLocker implements ILocker {
 
     @Override
     public void unlock() {

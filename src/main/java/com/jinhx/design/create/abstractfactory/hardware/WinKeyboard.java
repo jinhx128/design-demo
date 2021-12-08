@@ -1,10 +1,10 @@
 package com.jinhx.design.create.abstractfactory.hardware;
 
-public class MacIKeyboard implements IKeyboard {
+public class WinKeyboard implements IKeyboard {
 
     @Override
     public void input() {
-        System.out.println("Mac 专用键盘");
+        System.out.println("Win 专用键盘");
     }
 
 }
