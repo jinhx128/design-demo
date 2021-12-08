@@ -4,7 +4,7 @@ public class Test {
 
     public static void main(String[] args) {
         // 创建根节点及其子节点
-        Composite root = new Composite("root");
+        Composite root = new Composite("Root");
         root.add(new Leaf("Leaf A"));
         root.add(new Leaf("Leaf B"));
 
