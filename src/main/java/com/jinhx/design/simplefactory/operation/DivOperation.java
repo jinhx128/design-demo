@@ -1,9 +1,9 @@
-package com.jinhx.design.simplefactory;
+package com.jinhx.design.simplefactory.operation;
 
-public class OperationDiv extends Operation{
+public class DivOperation extends Operation {
 
     @Override
-    protected double getResule() {
+    public double getResule() {
         if (getValue2() != 0) {
             return getValue1() / getValue2();
         }

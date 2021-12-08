@@ -1,4 +1,6 @@
-package com.jinhx.design.simplefactory;
+package com.jinhx.design.simplefactory.factory;
+
+import com.jinhx.design.simplefactory.operation.*;
 
 public class OperationFactory {
 
@@ -7,16 +9,16 @@ public class OperationFactory {
 
         switch (operation) {
             case "add":
-                oper = new OperationAdd();
+                oper = new AddOperation();
                 break;
             case "sub":
-                oper = new OperationSub();
+                oper = new SubOperation();
                 break;
             case "mul":
-                oper = new OperationMul();
+                oper = new MulOperation();
                 break;
             case "div":
-                oper = new OperationDiv();
+                oper = new DivOperation();
                 break;
             default:
                 throw new UnsupportedOperationException("不支持该操作");

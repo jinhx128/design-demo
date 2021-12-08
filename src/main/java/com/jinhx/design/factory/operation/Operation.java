@@ -1,4 +1,4 @@
-package com.jinhx.design.simplefactory;
+package com.jinhx.design.factory.operation;
 
 import lombok.Data;
 
@@ -8,6 +8,6 @@ public abstract class Operation {
     private double value1 = 0;
     private double value2 = 0;
 
-    protected abstract double getResule();
+    public abstract double getResule();
 
 }
