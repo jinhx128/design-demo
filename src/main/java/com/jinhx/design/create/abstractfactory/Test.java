@@ -10,12 +10,12 @@ public class Test {
 
     public static void main(String[] args) {
         IHardwareFactory macHardwareFactory = new MacHardwareFactory();
-        //Mac专用键盘
+        // Mac专用键盘
         IKeyboard keyboard = macHardwareFactory.createKyeBoard();
         keyboard.input();
 
         IHardwareFactory winHardwareFactory = new WinHardwareFactory();
-        //Win专用鼠标
+        // Win专用鼠标
         IMouse mouse = winHardwareFactory.createMouse();
         mouse.click();
     }
