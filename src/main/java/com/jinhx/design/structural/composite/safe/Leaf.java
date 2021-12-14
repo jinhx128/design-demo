@@ -1,6 +1,6 @@
 package com.jinhx.design.structural.composite.safe;
 
-public class Leaf extends Component {
+public class Leaf extends AbstractComponent {
 
     public Leaf(String name) {
         super(name);

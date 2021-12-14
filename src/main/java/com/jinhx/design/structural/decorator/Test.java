@@ -3,13 +3,13 @@ package com.jinhx.design.structural.decorator;
 public class Test {
     
     public static void main(String[] args) {
-        Component component = new ConcreteComponent();
+        AbstractComponent abstractComponent = new ConcreteAbstractComponent();
         // 第一次修饰
-        component = new ConcreteDecoratorA(component);
+        abstractComponent = new ConcreteAbstractDecoratorA(abstractComponent);
         // 第二次修饰
-        component = new ConcreteDecoratorB(component);
+        abstractComponent = new ConcreteAbstractDecoratorB(abstractComponent);
         // 修饰后运行
-        component.operation();
+        abstractComponent.operation();
     }
     
 }

@@ -1,6 +1,6 @@
 package com.jinhx.design.create.simplefactory.operation;
 
-public class SubOperation extends Operation {
+public class SubAbstractOperation extends AbstractOperation {
 
     @Override
     public double getResule() {

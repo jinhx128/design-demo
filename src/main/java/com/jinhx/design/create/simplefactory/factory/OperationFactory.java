@@ -4,21 +4,21 @@ import com.jinhx.design.create.simplefactory.operation.*;
 
 public class OperationFactory {
 
-    public static Operation createOperation(String operation) {
-        Operation oper;
+    public static AbstractOperation createOperation(String operation) {
+        AbstractOperation oper;
 
         switch (operation) {
             case "add":
-                oper = new AddOperation();
+                oper = new AddAbstractOperation();
                 break;
             case "sub":
-                oper = new SubOperation();
+                oper = new SubAbstractOperation();
                 break;
             case "mul":
-                oper = new MulOperation();
+                oper = new MulAbstractOperation();
                 break;
             case "div":
-                oper = new DivOperation();
+                oper = new DivAbstractOperation();
                 break;
             default:
                 throw new UnsupportedOperationException("不支持该操作");

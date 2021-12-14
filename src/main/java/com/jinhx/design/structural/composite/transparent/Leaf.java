@@ -1,19 +1,19 @@
 package com.jinhx.design.structural.composite.transparent;
 
-public class Leaf extends Component {
+public class Leaf extends AbstractComponent {
 
     public Leaf(String name) {
         super(name);
     }
 
     @Override
-    public void add(Component component) {
+    public void add(AbstractComponent abstractComponent) {
         // 空实现，抛出不支持请求异常
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public void remove(Component component) {
+    public void remove(AbstractComponent abstractComponent) {
         // 空实现，抛出不支持请求异常
         throw new UnsupportedOperationException();
     }

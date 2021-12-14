@@ -1,10 +1,10 @@
 package com.jinhx.design.structural.decorator;
 
-public class ConcreteDecoratorB extends Decorator {
+public class ConcreteAbstractDecoratorB extends AbstractDecorator {
 
-    public ConcreteDecoratorB(Component component) {
+    public ConcreteAbstractDecoratorB(AbstractComponent abstractComponent) {
         // 定义被修饰者
-        super(component);
+        super(abstractComponent);
     }
 
     private void method2() {

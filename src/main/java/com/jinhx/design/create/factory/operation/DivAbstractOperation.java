@@ -1,6 +1,6 @@
 package com.jinhx.design.create.factory.operation;
 
-public class DivOperation extends Operation {
+public class DivAbstractOperation extends AbstractOperation {
 
     @Override
     public double getResule() {

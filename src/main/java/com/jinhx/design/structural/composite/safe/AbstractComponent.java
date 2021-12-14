@@ -1,10 +1,10 @@
 package com.jinhx.design.structural.composite.safe;
 
-public abstract class Component {
+public abstract class AbstractComponent {
 
     protected String name;
 
-    public Component(String name) {
+    public AbstractComponent(String name) {
         this.name = name;
     }
 

@@ -1,13 +1,13 @@
 package com.jinhx.design.structural.flyweight;
 
-public class ConcreteWebsite extends Website {
+public class ConcreteAbstractWebsite extends AbstractWebsite {
 
     /**
      * 发布类型
      */
     private String type;
 
-    public ConcreteWebsite(String type) {
+    public ConcreteAbstractWebsite(String type) {
         this.type = type;
     }
 

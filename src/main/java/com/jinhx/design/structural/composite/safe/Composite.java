@@ -3,20 +3,20 @@ package com.jinhx.design.structural.composite.safe;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Composite extends Component {
+public class Composite extends AbstractComponent {
 
     public Composite(String name) {
         super(name);
     }
 
-    private List<Component> componentList = new ArrayList<>();
+    private List<AbstractComponent> abstractComponentList = new ArrayList<>();
 
-    public void add(Component component) {
-        this.componentList.add(component);
+    public void add(AbstractComponent abstractComponent) {
+        this.abstractComponentList.add(abstractComponent);
     }
 
-    public void remove(Component component) {
-        this.componentList.remove(component);
+    public void remove(AbstractComponent abstractComponent) {
+        this.abstractComponentList.remove(abstractComponent);
     }
 
     @Override
@@ -28,8 +28,8 @@ public class Composite extends Component {
         System.out.println(name);
 
         // 下级遍历
-        for (Component component : componentList) {
-            component.display(depth + 1);
+        for (AbstractComponent abstractComponent : abstractComponentList) {
+            abstractComponent.display(depth + 1);
         }
     }
 

@@ -8,11 +8,11 @@ public class WebsiteFactory {
     /**
      * 定义一个池容器
      */
-    private static Map<String, Website> pool = new HashMap<>();
+    private static Map<String, AbstractWebsite> pool = new HashMap<>();
 
-    public static Website getWebsite(String type) {
+    public static AbstractWebsite getWebsite(String type) {
         if(!pool.containsKey(type)) {
-            pool.put(type, new ConcreteWebsite(type));
+            pool.put(type, new ConcreteAbstractWebsite(type));
         }
         return pool.get(type);
     }

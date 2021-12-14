@@ -1,6 +1,6 @@
 package com.jinhx.design.structural.decorator;
 
-public class ConcreteComponent extends Component {
+public class ConcreteAbstractComponent extends AbstractComponent {
 
     @Override
     public void operation() {

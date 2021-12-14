@@ -1,10 +1,10 @@
 package com.jinhx.design.create.builder;
 
-public class ConcreteBuilder extends Builder{
+public class ConcreteAbstractBuilder extends AbstractBuilder {
 
     private People people;
 
-    public ConcreteBuilder() {
+    public ConcreteAbstractBuilder() {
         people = new People();
     }
 
@@ -14,19 +14,19 @@ public class ConcreteBuilder extends Builder{
     }
 
     @Override
-    Builder bulidName(String name) {
+    AbstractBuilder bulidName(String name) {
         people.setName(name);
         return this;
     }
 
     @Override
-    Builder bulidAge(String age) {
+    AbstractBuilder bulidAge(String age) {
         people.setAge(age);
         return this;
     }
 
     @Override
-    Builder bulidSex(String sex) {
+    AbstractBuilder bulidSex(String sex) {
         people.setSex(sex);
         return this;
     }
