@@ -1,6 +1,6 @@
 package com.jinhx.design.behavioral.iterator;
 
-public interface Aggregate {
+public interface IAggregate {
 
     void add(Object obj);
 

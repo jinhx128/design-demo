@@ -4,8 +4,8 @@ public class Test {
 
     public static void main(String[] args) {
         AbstractRate rmBrate = new RMBrate();
-        Company importCompany = new ImportCompany();
-        Company exportCompany = new ExportCompany();
+        ICompany importCompany = new ImportCompany();
+        ICompany exportCompany = new ExportCompany();
         rmBrate.add(importCompany);
         rmBrate.add(exportCompany);
         rmBrate.change(10);

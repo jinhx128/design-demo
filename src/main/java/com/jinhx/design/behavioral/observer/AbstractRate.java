@@ -5,20 +5,20 @@ import java.util.List;
 
 public abstract class AbstractRate {
 
-    protected List<Company> companys = new ArrayList<>();
+    protected List<ICompany> iCompanyList = new ArrayList<>();
 
     /**
      * 增加观察者方法
      */
-    public void add(Company company) {
-        companys.add(company);
+    public void add(ICompany iCompany) {
+        iCompanyList.add(iCompany);
     }
 
     /**
      * 删除观察者方法
      */
-    public void remove(Company company) {
-        companys.remove(company);
+    public void remove(ICompany iCompany) {
+        iCompanyList.remove(iCompany);
     }
 
     public abstract void change(int number);

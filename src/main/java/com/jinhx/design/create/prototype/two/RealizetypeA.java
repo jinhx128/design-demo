@@ -1,6 +1,6 @@
 package com.jinhx.design.create.prototype.two;
 
-public class RealizetypeA implements Realizetype {
+public class RealizetypeA implements IRealizetype {
 
     @Override
     public Object clone() {

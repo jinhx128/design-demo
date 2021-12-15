@@ -4,9 +4,9 @@ public class Test {
 
     public static void main(String[] args) throws CloneNotSupportedException {
         PrototypeManager prototypeManager = new PrototypeManager();
-        Realizetype realizetypeA = prototypeManager.getRealizetype("realizetypeA");
+        IRealizetype realizetypeA = prototypeManager.getRealizetype("RealizetypeA");
         realizetypeA.test();
-        Realizetype realizetypeB = prototypeManager.getRealizetype("realizetypeB");
+        IRealizetype realizetypeB = prototypeManager.getRealizetype("RealizetypeB");
         realizetypeB.test();
     }
 

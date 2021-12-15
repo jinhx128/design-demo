@@ -1,6 +1,6 @@
 package com.jinhx.design.behavioral.observer;
 
-public class ExportCompany implements Company {
+public class ExportCompany implements ICompany {
 
     public void response(int number) {
         if (number > 0) {

@@ -5,9 +5,9 @@ import org.springframework.cglib.proxy.Proxy;
 public class Test {
 
     public static void main(String[] args) {
-        BuyHouse proxyBuyHouse = (BuyHouse) Proxy.newProxyInstance(BuyHouse.class.getClassLoader(), new
-                Class[]{BuyHouse.class}, new DynamicProxyHandler(new BuyHouseImpl()));
-        proxyBuyHouse.buyHosue();
+        IBuyHouse proxyIBuyHouse = (IBuyHouse) Proxy.newProxyInstance(IBuyHouse.class.getClassLoader(), new
+                Class[]{IBuyHouse.class}, new DynamicProxyHandler(new BuyHouse()));
+        proxyIBuyHouse.buyHosue();
     }
 
 }

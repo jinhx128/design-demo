@@ -5,20 +5,20 @@ import java.util.Map;
 
 public class PrototypeManager {
 
-    private Map<String, Realizetype> map = new HashMap<>();
+    private Map<String, IRealizetype> map = new HashMap<>();
 
     public PrototypeManager() {
         map.put("realizetypeA", new RealizetypeA());
         map.put("realizetypeB", new RealizetypeB());
     }
 
-    public void addRealizetype(String key, Realizetype realizetype) {
-        map.put(key, realizetype);
+    public void addRealizetype(String key, IRealizetype IRealizetype) {
+        map.put(key, IRealizetype);
     }
 
-    public Realizetype getRealizetype(String key) {
-        Realizetype temp = map.get(key);
-        return (Realizetype) temp.clone();
+    public IRealizetype getRealizetype(String key) {
+        IRealizetype temp = map.get(key);
+        return (IRealizetype) temp.clone();
     }
 
 }

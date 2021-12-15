@@ -8,7 +8,7 @@ public class RMBrate extends AbstractRate {
         } else if (number < 0) {
             System.out.println("人民币汇率贬值" + (-number) + "个基点");
         }
-        for (Company obs : companys) {
+        for (ICompany obs : iCompanyList) {
             obs.response(number);
         }
     }

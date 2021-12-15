@@ -1,6 +1,6 @@
 package com.jinhx.design.create.prototype.two;
 
-public interface Realizetype extends Cloneable {
+public interface IRealizetype extends Cloneable {
 
     Object clone();
 

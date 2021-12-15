@@ -1,6 +1,6 @@
 package com.jinhx.design.behavioral.observer;
 
-public interface Company {
+public interface ICompany {
 
     void response(int number);
 

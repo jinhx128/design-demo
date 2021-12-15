@@ -3,7 +3,7 @@ package com.jinhx.design.behavioral.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConcreteAggregate implements Aggregate {
+public class ConcreteAggregate implements IAggregate {
 
     private List list = new ArrayList();
 

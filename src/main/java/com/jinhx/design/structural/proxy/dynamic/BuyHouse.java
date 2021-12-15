@@ -1,7 +1,10 @@
 package com.jinhx.design.structural.proxy.dynamic;
 
-public interface BuyHouse {
+public class BuyHouse implements IBuyHouse {
 
-    void buyHosue();
+    @Override
+    public void buyHosue() {
+        System.out.println("买房");
+    }
 
 }
