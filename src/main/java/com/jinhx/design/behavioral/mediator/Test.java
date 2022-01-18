@@ -3,20 +3,18 @@ package com.jinhx.design.behavioral.mediator;
 public class Test {
 
     public static void main(String[] args) {
-        // 构建中介者
-        AbstractMediator concreteMediator = new ConcreteMediator();
-
-        // 构建具体的同事类
+        // 具体的同事类
         AbstractColleague concreteColleagueA = new ConcreteColleagueA();
         AbstractColleague concreteColleagueB = new ConcreteColleagueB();
 
-        // 注册同事
-        concreteMediator.register(concreteColleagueA);
-        concreteMediator.register(concreteColleagueB);
+        // 构建中介者
+        AbstractMediator concreteMediator = new ConcreteMediator(concreteColleagueA, concreteColleagueB);
 
-        // 发送消息
-        concreteColleagueA.send();
-        concreteColleagueB.send();
+        // 通过设置A影响B
+        concreteColleagueA.changeNumber(100, concreteMediator);
+
+        // 通过设置B影响A
+        concreteColleagueB.changeNumber(100, concreteMediator);
     }
 
 }

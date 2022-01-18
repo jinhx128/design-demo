@@ -8,14 +8,14 @@ public abstract class AbstractRate {
     protected List<ICompany> iCompanyList = new ArrayList<>();
 
     /**
-     * 增加观察者方法
+     * 增加观察者
      */
     public void add(ICompany iCompany) {
         iCompanyList.add(iCompany);
     }
 
     /**
-     * 删除观察者方法
+     * 删除观察者
      */
     public void remove(ICompany iCompany) {
         iCompanyList.remove(iCompany);

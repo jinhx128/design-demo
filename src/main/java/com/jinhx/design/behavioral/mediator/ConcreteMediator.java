@@ -1,32 +1,23 @@
 package com.jinhx.design.behavioral.mediator;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ConcreteMediator extends AbstractMediator {
 
-    /**
-     * 被中介者代理的同事
-     */
-    private List<AbstractColleague> abstractColleagueList;
-
-    public ConcreteMediator() {
-        abstractColleagueList = new ArrayList<>();
+    public ConcreteMediator(AbstractColleague a, AbstractColleague b) {
+        super(a, b);
     }
 
-    public void register(AbstractColleague abstractColleague) {
-        if (!abstractColleagueList.contains(abstractColleague)) {
-            abstractColleague.setMediator(this);
-            this.abstractColleagueList.add(abstractColleague);
-        }
+    //处理A对B的影响
+    public void aAffectB() {
+        int number = a.getNumber();
+        b.setNumber(number * 100);
+        System.out.println("B被动改为" + b.getNumber());
     }
 
-    public void relay(AbstractColleague abstractColleague) {
-        abstractColleagueList.forEach(c -> {
-            if (!c.equals(abstractColleague)) {
-                c.receive();
-            }
-        });
+    //处理B对A的影响
+    public void bAffectA() {
+        int number = b.getNumber();
+        a.setNumber(number / 100);
+        System.out.println("A被动改为" + a.getNumber());
     }
 
 }

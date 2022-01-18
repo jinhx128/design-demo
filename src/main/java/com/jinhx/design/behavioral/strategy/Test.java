@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Test {
 
     public static void main(String[] args) {
-        CashContext cashContext = null;
+        CashContext cashContext;
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("请输入打折方式（1：正常收费，2：满300返100，3：打8折）：");
@@ -33,7 +33,7 @@ public class Test {
                 return;
         }
 
-        double totalPrices = 0;
+        double totalPrices;
 
         System.out.print("请输入单价：");
         double price = scanner.nextDouble();

@@ -2,23 +2,19 @@ package com.jinhx.design.behavioral.mediator;
 
 public abstract class AbstractColleague {
 
-    /**
-     * 中介者抽象类
-     */
-    protected AbstractMediator abstractMediator;
+    protected int number;
 
-    /**
-     * 接收消息
-     */
-    public abstract void receive();
-
-    /**
-     * 发送消息
-     */
-    public abstract void send();
-
-    public void setMediator(AbstractMediator abstractMediator) {
-        this.abstractMediator = abstractMediator;
+    public int getNumber() {
+        return number;
     }
+
+    public void setNumber(int number){
+        this.number = number;
+    }
+
+    /**
+     * 注意这里的参数不再是同事类，而是一个中介者
+     */
+    public abstract void changeNumber(int number, AbstractMediator abstractMediator);
 
 }
