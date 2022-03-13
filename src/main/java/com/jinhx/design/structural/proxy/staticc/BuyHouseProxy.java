@@ -4,8 +4,8 @@ public class BuyHouseProxy implements IBuyHouse {
 
     private IBuyHouse iBuyHouse;
 
-    public BuyHouseProxy(IBuyHouse IBuyHouse) {
-        this.iBuyHouse = IBuyHouse;
+    public BuyHouseProxy() {
+        this.iBuyHouse = new BuyHouse();
     }
 
     @Override
